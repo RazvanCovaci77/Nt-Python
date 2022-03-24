@@ -7,7 +7,8 @@ my_list_asc = sorted(my_list)
 print('Lista ordonata ascendent', my_list_asc)
 
 # Varianta 2
-asc = my_list
+new_list = my_list.copy()
+asc = new_list
 asc.sort()
 print('Lista ordonata ascendent ', asc)
 
@@ -27,3 +28,5 @@ print('Lista ce contine numerele impare din lista ordonata crescator', my_list_o
 # afisează o listă ce conține numerele ce sunt multipli ai numărului 3 (folosind slice)
 triple = my_list_asc[2::3]
 print('Lista cu multiplii ai numarului 3 este', triple)
+
+print(my_list)
