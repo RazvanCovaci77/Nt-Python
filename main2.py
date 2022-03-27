@@ -1,3 +1,30 @@
+# Să se scrie o funcție care primește un număr nedefinit de parametrii și să se calculeze suma parametrilor care reprezintă
+# numere întregi sau reale.
+
+
+def get_v_integer():
+        m = 0
+        number = None
+    while number is None:
+        try:
+            number = m
+        except ValueError:
+            return 0
+        else:
+            return number
+
+def my_sum(num):
+    sum= 0
+
+    for i in num:
+        if get_v_integer(num):
+            sum = sum + i
+
+    return sum
+
+print("Suma parametrilor este:", get_v_integer(1, 5, -3, "abc", [12, 56, "cad"]))
+
+
 # Să se scrie o funcție recursivă care primește ca parametru un număr întreg și returnează:
 # suma tuturor numerelor de la [0, n]
 
