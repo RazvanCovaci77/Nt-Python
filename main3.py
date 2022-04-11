@@ -7,6 +7,7 @@
 # price
 
 import csv
+import json
 from random import randint
 
 cars = [
@@ -60,3 +61,6 @@ with open('input.csv','w') as my_files:
     writer.writerow(keys)
     for car in cars:
         writer.writerow(car.values())
+
+with open('car.json', 'w') as json_file:
+    json.dump(cars, json_file, indent=2)
